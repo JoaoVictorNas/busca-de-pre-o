@@ -1,7 +1,11 @@
 from bs4 import BeautifulSoup
 import requests
 import pymysql
+import streamlit as st
 
+st.set_page_config(page_title="Busca de Preço")
+st.write("Faça a busca de preço")
+st.button("executar")
 
 # Abrir a conexão com o banco ==================================================
 def abrirBanco():
