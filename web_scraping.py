@@ -87,10 +87,15 @@ def main():
     print("========================")
     print("1- Fazer pesquisa no site")
 
+    op = input('Digite o número das plataformas: ')
+
     con = abrirBanco()
-    site(con)
-    con.close()
-    print("Conexão com o banco de dados encerrada.")
+
+    if con is not None:
+        if op == "1":
+            site(con)
+        con.close()
+        print("Conexão com o banco de dados encerrada.")
 
 
 # CHAMA O MAIN =================================================================
