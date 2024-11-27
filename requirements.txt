@@ -1,0 +1,4 @@
+requests
+pymysql
+streamlit
+beautifulsoup4
